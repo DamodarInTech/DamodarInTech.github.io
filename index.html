@@ -4,87 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damodar's Website</title>
-    <style>
-        /* Basic styles for the body */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        /* Container for content */
-        .container {
-            max-width: 800px;
-        }
-
-        /* Title styling */
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        /* Animated buttons */
-        .button {
-            display: inline-block;
-            margin: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 50px;
-            border: 2px solid #007BFF;
-            transition: all 0.3s ease-in-out;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Button hover animation */
-        .button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #0056b3;
-            z-index: -1;
-            transition: transform 0.4s ease;
-            transform: scaleX(0);
-            transform-origin: right;
-        }
-
-        .button:hover::before {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-
-        .button:hover {
-            background-color: transparent;
-            border-color: #0056b3;
-        }
-
-        /* Animation keyframes */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- Include ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <!-- Include Parallax.js -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.5.0/parallax.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website!</h1>
-        <a href="contact.html" class="button">Contact Me</a>
-        <a href="resume.html" class="button">View My Resume</a>
-    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Website</h1>
+        <p>This is a modern, smooth-scrolling website.</p>
+    </section>
+
+    <!-- Parallax Section -->
+    <section id="parallax-section">
+        <div data-parallax="scroll" data-image-src="your-background-image.jpg" class="parallax-window">
+            <h2>Parallax Effect</h2>
+            <p>Scroll down to see the magic!</p>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey">
+        <h2>My Journey</h2>
+        <p>Details about your professional and personal journey.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Details about your work or portfolio.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: dprab@uic.edu</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
