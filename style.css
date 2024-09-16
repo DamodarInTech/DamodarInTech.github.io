@@ -51,7 +51,7 @@ section {
 }
 
 #home {
-    background-image: url('your-background-image.jpg');
+    background-image: url('images.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
