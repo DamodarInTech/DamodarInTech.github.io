@@ -2,25 +2,16 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #000428, #004e92); /* Smooth gradient */
-    background-size: 400% 400%; /* Larger background for smooth movement */
-    animation: backgroundAnimation 10s ease infinite; /* Smooth animation */
+    background: linear-gradient(45deg, #000428, #004e92);
     color: white;
     text-align: center;
-}
-
-/* Smooth animated background */
-@keyframes backgroundAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 /* Navigation bar styling */
 nav {
     position: fixed;
     top: 0;
-    right: 0; /* Right-align the navigation */
+    right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px 30px;
 }
@@ -66,57 +57,80 @@ nav ul li a:hover::before {
     transform-origin: left;
 }
 
-/* Home section */
-#home {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-h1 {
-    font-size: 64px;
-}
-
-p {
-    font-size: 24px;
-}
-
-/* Section styling */
-section {
-    padding: 100px 20px;
-}
-
-.section {
-    padding: 20px 0;
-}
-
-#journey {
-    background-color: #111;
-}
-
-#projects, #contact {
-    background-color: #222;
-    margin-top: 20px;
-}
-
+/* Titles */
 h2 {
-    font-size: 36px;
+    color: #F1C40F; /* Cream or rich color */
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Left-aligned sections */
+.left-align {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
 
 p {
     font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Contact links */
-a {
-    color: #007BFF;
-    text-decoration: none;
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
 }
 
-a:hover {
-    text-decoration: underline;
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
 
 /* Responsive design */
