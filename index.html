@@ -15,7 +15,9 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#journey">Journey</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -27,44 +29,70 @@
         <p>Business Analyst | Data Science Enthusiast</p>
     </section>
 
-    <!-- Journey Section -->
-    <section id="journey">
-        <h2>My Journey</h2>
-        <div class="section">
-            <h3>Work Experience</h3>
-            <p><strong>Teaching Assistant</strong>, University of Illinois at Chicago (Aug 2023 – Present)</p>
-            <p>Managed classroom activities, graded assignments, and guided over 150 students in business statistics and simulations.</p>
-
-            <p><strong>Business Analyst</strong>, Tredence (Jul 2021 - Aug 2023)</p>
-            <p>Worked on Walmart Connect & Walmart Spark projects, analyzing KPIs and optimizing dashboard performance by 80%.</p>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="left-align">
+            <h3>Teaching Assistant</h3>
+            <p>University of Illinois at Chicago (Aug 2023 – Present)</p>
+            <p>Managing classroom activities and grading assignments for business statistics and simulations.</p>
+            
+            <h3>Business Analyst</h3>
+            <p>Tredence (Jul 2021 - Aug 2023)</p>
+            <p>Worked on Walmart Connect & Walmart Spark projects, analyzing KPIs and optimizing dashboard performance.</p>
         </div>
+    </section>
 
-        <div class="section">
-            <h3>Education</h3>
-            <p><strong>Master of Science in Business Analytics</strong><br>University of Illinois at Chicago (Aug 2023 – Dec 2024)</p>
-            <p><strong>Bachelor of Technology in Electrical & Electronics Engineering</strong><br>Manipal Institute of Technology (Jul 2017 - Jul 2021)</p>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="left-align">
+            <h3>Master of Science in Business Analytics</h3>
+            <p>University of Illinois at Chicago (Aug 2023 – Dec 2024)</p>
+
+            <h3>Bachelor of Technology in Electrical & Electronics Engineering</h3>
+            <p>Manipal Institute of Technology (Jul 2017 - Jul 2021)</p>
         </div>
+    </section>
 
-        <div class="section">
-            <h3>Skills & Technologies</h3>
-            <p><strong>Programming Languages:</strong> Python, SQL, C++, Hive</p>
-            <p><strong>Data Visualization:</strong> Tableau, Looker, Power BI</p>
-            <p><strong>Cloud Platforms:</strong> GCP</p>
-            <p><strong>Statistical & Analytical:</strong> Data Modeling, Logistic Regression, Analytic Thinking, KNN</p>
-            <p><strong>Python Libraries:</strong> Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow, Seaborn</p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="path_to_python_logo.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <img src="path_to_sql_logo.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="skill-item">
+                <img src="path_to_tableau_logo.png" alt="Tableau">
+                <p>Tableau</p>
+            </div>
+            <!-- Add more skills here -->
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Key Projects</h2>
-        <p><strong>Toxic Comment Classification Using Machine Learning</strong></p>
-        <p>Built a machine learning model for online platforms to moderate toxic comments, achieving 90% accuracy using Logistic Regression.</p>
+        <div class="left-align">
+            <h3>Toxic Comment Classification Using Machine Learning</h3>
+            <p>Built a machine learning model to moderate toxic comments, achieving 90% accuracy using Logistic Regression.</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
         <p>Email: <a href="mailto:dprab@uic.edu">dprab@uic.edu</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/damodar-prabhu-b9207715a" target="_blank">damodar-prabhu-b9207715a</a></p>
     </section>
