@@ -6,7 +6,7 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */ 
 }
 
 header {
