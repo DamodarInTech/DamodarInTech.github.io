@@ -6,6 +6,7 @@ body {
   background-color: black; /* Black background */
   color: white; /* White text */
   text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header */
@@ -13,6 +14,28 @@ header {
   padding: 1rem;
 }
 
+/* Centering the Main Heading */
+#about h1 {
+  font-size: 5rem; /* Make the name large */
+  margin: 2rem 0;
+}
+
+#about h2 {
+  font-size: 2rem; /* Make the title large */
+  margin-bottom: 3rem;
+}
+
+/* Ensure each section takes one full screen */
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* Snap each section into view */
+}
+
+/* Navigation Styling */
 nav ul {
   list-style: none;
   padding: 0;
@@ -34,15 +57,6 @@ nav ul li a:hover {
   color: gray; /* Hover effect */
 }
 
-/* Section Styles */
-section {
-  padding: 2rem;
-}
-
-h1, h2 {
-  color: white;
-}
-
 /* Project Section */
 .project {
   border: 1px solid white;
@@ -52,12 +66,17 @@ h1, h2 {
   border-radius: 5px;
 }
 
+/* Skills and Technologies - Add logos */
+.skills img {
+  width: 50px; /* Set logo size */
+  margin: 0 15px;
+}
+
 /* Footer */
 footer {
   background-color: black;
   color: white;
   padding: 1rem 0;
-  position: absolute;
   width: 100%;
   bottom: 0;
 }
