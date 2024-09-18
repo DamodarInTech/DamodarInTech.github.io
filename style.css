@@ -3,39 +3,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black; /* Black background */
-  color: white; /* White text */
+  background-color: black;
+  color: white;
   text-align: center;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header */
 header {
   padding: 1rem;
 }
 
-/* Centering the Main Heading */
-#about h1 {
-  font-size: 5rem; /* Make the name large */
-  margin: 2rem 0;
-}
-
-#about h2 {
-  font-size: 2rem; /* Make the title large */
-  margin-bottom: 3rem;
-}
-
-/* Ensure each section takes one full screen */
-section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start; /* Snap each section into view */
-}
-
-/* Navigation Styling */
 nav ul {
   list-style: none;
   padding: 0;
@@ -57,7 +34,15 @@ nav ul li a:hover {
   color: gray; /* Hover effect */
 }
 
-/* Project Section */
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
 .project {
   border: 1px solid white;
   margin: 1rem auto;
@@ -66,28 +51,22 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Skills and Technologies - Add logos */
+/* Skills Logos */
 .skills img {
-  width: 50px; /* Set logo size */
+  width: 50px;
   margin: 0 15px;
 }
 
-/* Social Media Section */
+/* Social Media Logos */
 .social-media img {
   width: 40px;
   margin: 0 10px;
 }
 
-/* Footer */
 footer {
   background-color: black;
   color: white;
   padding: 1rem 0;
   width: 100%;
   bottom: 0;
-}
-
-footer .social-media-footer img {
-  width: 30px;
-  margin: 0 10px;
 }
