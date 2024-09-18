@@ -1,102 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damodar's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Include GSAP for animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <!-- Include ScrollMagic for scroll-triggered effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damodar Prabhu | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+
+  <header>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Damodar Prabhu</h1>
-        <p>Business Analyst | Data Science Enthusiast</p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h1>Damodar Prabhu</h1>
+    <h2>Business Analyst | Data Science Enthusiast</h2>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="left-align">
-            <h3>Teaching Assistant</h3>
-            <p>University of Illinois at Chicago (Aug 2023 – Present)</p>
-            <p>Managing classroom activities and grading assignments for business statistics and simulations.</p>
-            
-            <h3>Business Analyst</h3>
-            <p>Tredence (Jul 2021 - Aug 2023)</p>
-            <p>Worked on Walmart Connect & Walmart Spark projects, analyzing KPIs and optimizing dashboard performance.</p>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills">
+      <img src="python-logo.png" alt="Python Logo">
+      <img src="sql-logo.png" alt="SQL Logo">
+      <img src="tableau-logo.png" alt="Tableau Logo">
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="left-align">
-            <h3>Master of Science in Business Analytics</h3>
-            <p>University of Illinois at Chicago (Aug 2023 – Dec 2024)</p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of your project.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of your project.</p>
+    </div>
+  </section>
 
-            <h3>Bachelor of Technology in Electrical & Electronics Engineering</h3>
-            <p>Manipal Institute of Technology (Jul 2017 - Jul 2021)</p>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">yourname</a></p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills & Technologies</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <img src="path_to_python_logo.png" alt="Python">
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <img src="path_to_sql_logo.png" alt="SQL">
-                <p>SQL</p>
-            </div>
-            <div class="skill-item">
-                <img src="path_to_tableau_logo.png" alt="Tableau">
-                <p>Tableau</p>
-            </div>
-            <!-- Add more skills here -->
-        </div>
-    </section>
+  <footer>
+    <p>&copy; 2024 Damodar Prabhu. All rights reserved.</p>
+  </footer>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="left-align">
-            <h3>Toxic Comment Classification Using Machine Learning</h3>
-            <p>Built a machine learning model to moderate toxic comments, achieving 90% accuracy using Logistic Regression.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit_form.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Email: <a href="mailto:dprab@uic.edu">dprab@uic.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/damodar-prabhu-b9207715a" target="_blank">damodar-prabhu-b9207715a</a></p>
-    </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
