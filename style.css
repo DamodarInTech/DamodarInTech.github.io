@@ -72,6 +72,12 @@ nav ul li a:hover {
   margin: 0 15px;
 }
 
+/* Social Media Section */
+.social-media img {
+  width: 40px;
+  margin: 0 10px;
+}
+
 /* Footer */
 footer {
   background-color: black;
@@ -79,4 +85,9 @@ footer {
   padding: 1rem 0;
   width: 100%;
   bottom: 0;
+}
+
+footer .social-media-footer img {
+  width: 30px;
+  margin: 0 10px;
 }
