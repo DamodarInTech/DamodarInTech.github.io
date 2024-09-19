@@ -6,7 +6,7 @@ gsap.from("#skills", { duration: 1, opacity: 0, y: -100, delay: 1.5 });
 gsap.from("#projects", { duration: 1, opacity: 0, y: -100, delay: 2 });
 gsap.from("#contact", { duration: 1, opacity: 0, y: -100, delay: 2.5 });
 
-// ScrollMagic animations for scroll-triggered effects 
+// ScrollMagic animations for scroll-triggered effects
 var controller = new ScrollMagic.Controller();
 
 var experienceScene = new ScrollMagic.Scene({
