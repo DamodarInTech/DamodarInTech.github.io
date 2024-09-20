@@ -1,4 +1,4 @@
-// GSAP animations for smooth section entry 
+// GSAP animations for smooth section entry  
 gsap.from("#about", { duration: 1, opacity: 0, y: -100 });
 gsap.from("#experience", { duration: 1, opacity: 0, y: -100, delay: 0.5 });
 gsap.from("#education", { duration: 1, opacity: 0, y: -100, delay: 1 });
