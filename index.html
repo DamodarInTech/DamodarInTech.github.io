@@ -31,7 +31,7 @@
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="centered">
     <h1>Damodar Prabhu</h1>
     <p>A passionate Data Science enthusiast who thrives on solving business problems using data-driven insights and cutting-edge technologies. Always eager to innovate, learn, and collaborate to create impactful solutions.</p>
   </section>
@@ -40,31 +40,26 @@
   <section id="experience">
     <h2>Work Experience</h2>
     <div class="experience-item">
+      <img src="images/uic-logo.png" alt="UIC Logo" class="company-logo">
       <h3>University of Illinois at Chicago | Analytics Teaching Assistant</h3>
-      <p><strong>August 2023 - August 2024</strong></p>
-      <ul>
-        <li>Led computer labs and discussions, enhancing student learning in Business Statistics and Data Analysis.</li>
-        <li>Automated assignment tracking and optimized student engagement by improving feedback processes.</li>
-      </ul>
+      <p>August 2023 - August 2024</p>
+      <p>Led computer labs and discussions, enhancing student learning in Business Statistics and Data Analysis. Automated assignment tracking and optimized student engagement by improving feedback processes.</p>
     </div>
     <hr class="section-divider">
 
     <div class="experience-item">
+      <img src="images/tredence-logo.png" alt="Tredence Logo" class="company-logo">
       <h3>Tredence Analytics | Data Analyst</h3>
-      <p><strong>July 2021 - August 2023</strong></p>
-      <ul>
-        <li>Improved advertising ROI for Walmart Connect by analyzing KPIs and implementing data solutions.</li>
-        <li>Enhanced customer targeting, generating additional revenue and optimizing ad spend through in-depth analysis.</li>
-      </ul>
+      <p>July 2021 - August 2023</p>
+      <p>Improved advertising ROI for Walmart Connect by analyzing KPIs and implementing data solutions. Enhanced customer targeting, generating additional revenue and optimizing ad spend through in-depth analysis.</p>
     </div>
     <hr class="section-divider">
 
     <div class="experience-item">
+      <img src="images/siemens-logo.png" alt="Siemens Logo" class="company-logo">
       <h3>Siemens | Operations Intern</h3>
-      <p><strong>March 2019 - April 2019</strong></p>
-      <ul>
-        <li>Reduced downtime by analyzing operational data from electrical equipment and collaborated with the engineering team to improve system reliability.</li>
-      </ul>
+      <p>March 2019 - April 2019</p>
+      <p>Reduced downtime by analyzing operational data from electrical equipment and collaborated with the engineering team to improve system reliability.</p>
     </div>
   </section>
 
@@ -72,6 +67,7 @@
   <section id="education">
     <h2>Education</h2>
     <div class="education-item">
+      <img src="images/uic-logo.png" alt="UIC Logo" class="university-logo">
       <h3>University of Illinois at Chicago</h3>
       <p>Master of Science in Business Analytics (Expected December 2024)</p>
       <p>GPA: 4.0/4.0</p>
@@ -79,6 +75,7 @@
     <hr class="section-divider">
 
     <div class="education-item">
+      <img src="images/manipal-logo.png" alt="Manipal Logo" class="university-logo">
       <h3>Manipal Institute of Technology</h3>
       <p>Bachelor of Technology in Electrical & Electronics Engineering, Minor in Digital Marketing</p>
       <p>GPA: 3.7/4.0</p>
@@ -88,14 +85,35 @@
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills & Technologies</h2>
-    <div class="skills-box">
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">C++</div>
-      <div class="skill">Google Cloud Platform</div>
-      <div class="skill">Tableau</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">TensorFlow</div>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="images/python-logo.png" alt="Python Logo" class="skill-logo">
+        <p>Python</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/sql-logo.png" alt="SQL Logo" class="skill-logo">
+        <p>SQL</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/c++-logo.png" alt="C++ Logo" class="skill-logo">
+        <p>C++</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/gcp-logo.png" alt="GCP Logo" class="skill-logo">
+        <p>Google Cloud Platform</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/tableau-logo.png" alt="Tableau Logo" class="skill-logo">
+        <p>Tableau</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/powerbi-logo.png" alt="Power BI Logo" class="skill-logo">
+        <p>Power BI</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/tensorflow-logo.png" alt="TensorFlow Logo" class="skill-logo">
+        <p>TensorFlow</p>
+      </div>
     </div>
   </section>
 
@@ -126,6 +144,19 @@
   <!-- Contact Section with Form -->
   <section id="contact">
     <h2>Contact Me</h2>
+    <div class="contact-details">
+      <a href="mailto:dprab@uic.edu">
+        <img src="images/email-logo.png" alt="Email Logo">
+      </a>
+      <a href="https://www.linkedin.com/in/damodar-prabhu-b9207715a/" target="_blank">
+        <img src="images/linkedin-logo.png" alt="LinkedIn Logo">
+      </a>
+      <a href="https://github.com/DamodarInTech" target="_blank">
+        <img src="images/github-logo.png" alt="GitHub Logo">
+      </a>
+    </div>
+
+    <!-- Contact Form -->
     <form action="submit_form.php" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required><br>
