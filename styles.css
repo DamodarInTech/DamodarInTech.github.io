@@ -1,86 +1,172 @@
-/* General Styles */ 
+/* General Body Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black; /* Black background */
-  color: white; /* White text */
-  text-align: center;
-  overflow-x: hidden;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
+/* Header Styling */
 header {
+  background-color: #333;
+  color: white;
   padding: 1rem;
+  text-align: center;
 }
 
-nav ul {
-  list-style: none;
+header nav ul {
+  list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
+header nav ul li {
   display: inline;
   margin: 0 1rem;
 }
 
-nav ul li a {
+header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: gray; /* Hover effect */
+header nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Enlarging the Name in the About Section */
-#about h1 {
-  font-size: 6rem; /* Large font size for your name */
-  margin-top: 3rem;
+/* Centered Section for About Me */
+.centered {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f4f4f4;
 }
 
-#about h2 {
-  font-size: 2.5rem; /* Subtitle size */
-  margin-bottom: 3rem;
-}
-
-/* Section Styling */
+/* Section Styles */
 section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  scroll-snap-align: start;
+  padding: 2rem 5%;
 }
 
-/* Project Section Styling */
-.project {
-  border: 1px solid white;
-  margin: 1rem auto;
-  padding: 1rem;
-  width: 80%;
-  border-radius: 5px;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
-/* Skills Logos */
-.skills img {
+p {
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* Logo Styling for Company and University Logos */
+.company-logo, .university-logo {
+  max-width: 100px;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.skill-logo {
   width: 50px;
-  margin: 0 15px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Social Media Logos */
-.social-media img {
+/* Grid for Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.skill-item p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Divider Between Sections */
+.section-divider {
+  border: 0;
+  height: 3px;
+  background-color: #333;
+  margin: 2rem 0;
+}
+
+/* Contact Section Logos */
+.contact-details {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-logo {
   width: 40px;
   margin: 0 10px;
+  transition: transform 0.3s ease;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  padding: 1rem 0;
+.contact-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Form Styling */
+form {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+form input, form textarea {
   width: 100%;
-  bottom: 0;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
