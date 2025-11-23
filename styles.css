@@ -177,21 +177,4 @@ footer {
 }
 
 
-/* --- Experience section enhancements --- */
-.bullets { 
-  margin: 0.5rem 0 0.8rem 1.25rem; 
-}
-.bullets li { 
-  margin: 0.35rem 0; 
-  line-height: 1.5; 
-}
-
-/* Highlight newest role */
-.experience-item:first-of-type {
-  background: #fff;
-  border-left: 5px solid #007bff;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
 
